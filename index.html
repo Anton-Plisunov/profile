@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anton Plisunov Profile</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/Style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="/index.html">
+          <img class="Push" src="images/logo.png" alt="logo" width="300" />
+        </a>
+        <div style="margin: 20px">
+          <li><a href="/Gallery.html" target="_parent">Gallery</a></li>
+          <li><a href="/Contact.html" target="_parent">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+    <header>
+      <div class="action active">
+        <div class="container text-center" style="margin-top: 30px">
+          <div class="imgline">
+            <img
+              src="images/Ph1.jpg"
+              alt="work"
+              width="350"
+              style="margin: 5px 5px 5px 5px"
+            />
+            <img
+              src="images/ph4.jpg"
+              alt="I'm"
+              width="350"
+              style="margin: 5px 5px 5px 5px"
+            />
+            <img
+              src="images/ph2.jpg"
+              alt="work"
+              width="350"
+              style="margin: 5px 5px 5px 5px"
+            />
+          </div>
+          <h1>About me</h1>
+          <p>My way in The World of Cinema and Television</p>
+          <button id="next" type="button" class="btn btn-outline-warning">
+            More
+          </button>
+        </div>
+      </div>
+      <header class="action">
+        <div class="container text-center" style="margin-top: 150px">
+          <table
+            style="
+              color: #ffffff;
+              font-size: larger;
+              width: 100%;
+              margin: 10px 0 50px 0;
+            "
+          >
+            <tr>
+              <th>Education</th>
+              <th>First Jobs</th>
+              <th>Last Jobs</th>
+            </tr>
+            <tr>
+              <td>
+                College of Entrepreneurship №11. <br />
+                Department of Audiovisual Technology <br />
+                Specialty: Sound technician. <br />
+              </td>
+              <td>
+                Start of work 2012 <br />
+                My first serious expirince in lighting department <br />
+                TV chanel <cite>"Russia Culture" </cite> <br />
+                Festival film projects and <cite>TVRain channel</cite>
+              </td>
+              <td>
+                Lighting designer and Gaffer <br />
+                In the field of broadcasting business events
+                <br />
+                Television and music video <br />
+              </td>
+            </tr>
+          </table>
+          <div style="margin-top: 230px">
+            <a href="/Skils.html"
+              ><button type="button" class="btn btn-outline-warning">
+                More
+              </button></a
+            >
+          </div>
+        </div>
+      </header>
+    </header>
+    <footer>
+      <p>Site created on January 28, 2023</p>
+    </footer>
+    <script>
+      let b = document.getElementById("next");
+      var actions = document.querySelectorAll(".action");
+
+      b.addEventListener("click", function () {
+        let idx = this.dataset.idx || 0;
+        actions[idx].classList.remove("active");
+        if (++idx < actions.length) {
+          actions[idx].classList.add("active");
+          this.dataset.idx = idx;
+        }
+      });
+    </script>
+  </body>
+</html>
