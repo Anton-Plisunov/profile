@@ -1,0 +1,153 @@
+@import "styles/Skills.css";
+@import "styles/Gallery.css";
+@import "styles/Contacts.css";
+
+/*background*/
+body {
+  height: 1000px;
+  background: linear-gradient(
+    to top left,
+    #1d1d1d 10%,
+    #4d167e,
+    #1a509bd8,
+    #15334d 70%,
+    #1d1d1d 80%
+  );
+  animation: gradient 9s infinite;
+  background-size: 800%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
+
+/*NAVIGATION*/
+nav {
+  overflow: hidden;
+  height: 120px;
+}
+nav ul {
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+}
+nav ul li a:hover {
+  color: orange;
+}
+/*TEXT*/
+h1 {
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: 4px 0px #00000024;
+}
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+  size: 10px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+th {
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: 4px 0px #00000024;
+}
+td {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+table {
+  padding: 50px;
+}
+tr:hover {
+  background-color: #b600b310;
+}
+
+/*Change mainpage to more info*/
+.action {
+  display: none;
+}
+.action.active {
+  display: block;
+}
+/* Push item */
+.Push {
+  transition-duration: 1s;
+  transition-property: all;
+}
+.Push:hover {
+  transform: scale(1.1);
+}
+/*photo*/
+.imgline {
+  padding: 30px;
+}
+/* Lamp */
+.position1 {
+  content: "LampOFF.png";
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  left: 760px;
+  height: 900px;
+  width: 780px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0px;
+}
+
+/*Invisible.Change to next list*/
+
+header {
+  opacity: 0;
+  animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* footer */
+footer {
+  position: fixed;
+  text-align: center;
+  margin-bottom: 5px;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
