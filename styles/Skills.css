@@ -1,6 +1,6 @@
 /*background*/
 body {
-  height: 1400px;
+  height: 0.2vh;
   background: linear-gradient(
     to top left,
     #1d1d1d 10%,
@@ -40,4 +40,30 @@ h1 {
 th {
   width: 150px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+  th,
+  td {
+    white-space: nowrap;
+  }
+  th {
+    background-color: #1d1d1d48;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+  }
+  td {
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
 }
