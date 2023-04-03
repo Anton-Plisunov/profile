@@ -1,6 +1,6 @@
 /*background*/
 body {
-  height: 0.3vh;
+  height: 100vh;
   background: linear-gradient(
     to top left,
     #1d1d1d 10%,
@@ -51,6 +51,7 @@ th {
   th,
   td {
     white-space: nowrap;
+    border-radius: 50px;
   }
   th {
     background-color: #1d1d1d48;

@@ -29,6 +29,34 @@ body {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  body {
+    height: 0.2vh;
+    background: linear-gradient(
+      to top left,
+      #1d1d1d 10%,
+      #4d167e,
+      #1a509bd8,
+      #15334d 70%,
+      #1d1d1d 80%
+    );
+    animation: gradient 1s infinite;
+    background-size: 100%;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 80% 0%;
+    }
+    50% {
+      background-position: 20% 100%;
+    }
+    100% {
+      background-position: 80% 0%;
+    }
+  }
+}
+
 /*NAVIGATION*/
 nav {
   overflow: hidden;
