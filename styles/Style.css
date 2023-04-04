@@ -137,7 +137,8 @@ table {
   display: flexbox;
   padding: 50px;
   justify-content: center;
-  width: 75%;
+  align-items: center;
+  width: 100%;
 }
 tr:hover {
   background-color: #b600b310;
