@@ -31,16 +31,10 @@ body {
 
 @media screen and (max-width: 1000px) {
   body {
-    height: 0.2vh;
-    background: linear-gradient(
-      to top left,
-      #1d1d1d 10%,
-      #4d167e,
-      #1a509bd8,
-      #15334d 70%,
-      #1d1d1d 80%
-    );
-    animation: gradient 1s infinite;
+    height: 400vh;
+
+    background: linear-gradient(to top left, #000000, #4487e7, #000000);
+    animation: gradient 8s infinite;
     background-size: 100%;
   }
 
@@ -64,6 +58,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 20px;
 }
 nav ul {
   margin-top: 5px;
@@ -74,7 +69,9 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0px 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #1d1d1d11;
 }
 nav ul li a {
   color: white;
@@ -89,6 +86,12 @@ nav ul li a:hover {
 
 nav ul li a.active {
   color: orange;
+}
+.gl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -131,10 +134,17 @@ td {
   margin-bottom: 20px;
 }
 table {
+  display: flexbox;
   padding: 50px;
+  justify-content: center;
+  width: 75%;
 }
 tr:hover {
   background-color: #b600b310;
+  border-bottom: 2px solid white;
+}
+.oneT {
+  width: 100%;
 }
 
 /*Change mainpage to more info*/
@@ -159,6 +169,9 @@ tr:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.bor {
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -203,4 +216,8 @@ header {
 footer {
   height: 100px;
   width: 100%;
+}
+
+iframe {
+  border-radius: 20px;
 }
