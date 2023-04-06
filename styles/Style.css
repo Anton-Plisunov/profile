@@ -3,8 +3,9 @@
 @import "Contacts.css";
 
 /*background*/
+
 body {
-  height: 100%;
+  background-size: cover;
   background: linear-gradient(
     to top left,
     #1d1d1d 10%,
@@ -31,11 +32,9 @@ body {
 
 @media screen and (max-width: 1000px) {
   body {
-    height: 400vh;
-
     background: linear-gradient(to top left, #000000, #4487e7, #000000);
     animation: gradient 8s infinite;
-    background-size: 100%;
+    background-size: cover;
   }
 
   @keyframes gradient {
@@ -173,6 +172,39 @@ tr:hover {
 }
 .bor {
   border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  /* Медиа-запрос для мобильной версии */
+  .imgline {
+    position: relative; /* Устанавливаем родителю относительное позиционирование */
+    height: 300px; /* Устанавливаем высоту родителя на 100% */
+  }
+
+  .imgline img {
+    position: absolute; /* Устанавливаем дочерним фотографиям абсолютное позиционирование */
+    top: 0; /* Устанавливаем верхний край фотографии вверху родителя */
+    left: 0; /* Устанавливаем левый край фотографии влево от родителя */
+    width: 100%; /* Устанавливаем ширину фотографии на 100% родителя */
+    height: 300px; /* Устанавливаем высоту фотографии на 100% родителя */
+    opacity: 0; /* Устанавливаем начальную непрозрачность 0 (фотографии будут скрыты) */
+    animation: imgAnimation 6s infinite; /* Добавляем анимацию с бесконечным циклом */
+  }
+
+  /* Создаем анимацию для смены фотографий */
+  @keyframes imgAnimation {
+    0%,
+    33.33% {
+      opacity: 1; /* На первом и третьем этапах анимации делаем фотографию видимой */
+    }
+    33.33%,
+    66.67% {
+      opacity: 0; /* На втором этапе анимации делаем фотографию невидимой */
+    }
+    66.67%,
+    100% {
+      opacity: 1; /* На третьем и четвертом этапах анимации делаем фотографию видимой */
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
