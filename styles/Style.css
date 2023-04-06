@@ -173,18 +173,23 @@ tr:hover {
 .imglineA {
   padding: 10px;
   display: flex;
+  max-width: 90%;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
+.imglineA img {
+  width: 140px;
+}
 .bor {
   border-radius: 20px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   /* Медиа-запрос для мобильной версии */
   .imglineA {
     width: 100%;
-    flex-flow: inherit;
+    flex-flow: wrap;
   }
 }
 @media screen and (max-width: 768px) {
@@ -192,9 +197,6 @@ tr:hover {
   .imglineA {
     width: 100%;
     flex-flow: wrap-reverse;
-  }
-  .imlineA img {
-    width: 20px;
   }
 
   .imgline {
