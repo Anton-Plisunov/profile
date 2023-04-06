@@ -170,11 +170,33 @@ tr:hover {
   align-items: center;
   flex-direction: row;
 }
+.imglineA {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .bor {
   border-radius: 20px;
 }
+@media screen and (max-width: 450px) {
+  /* Медиа-запрос для мобильной версии */
+  .imglineA {
+    width: 100%;
+    flex-flow: inherit;
+  }
+}
 @media screen and (max-width: 768px) {
   /* Медиа-запрос для мобильной версии */
+  .imglineA {
+    width: 100%;
+    flex-flow: wrap-reverse;
+  }
+  .imlineA img {
+    width: 20px;
+  }
+
   .imgline {
     position: relative; /* Устанавливаем родителю относительное позиционирование */
     height: 300px; /* Устанавливаем высоту родителя на 100% */
