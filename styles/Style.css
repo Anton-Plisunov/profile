@@ -125,19 +125,21 @@ th {
   color: #ffffff;
   margin-top: 10px;
   text-shadow: 4px 0px #00000024;
+  background-color: #15334d60;
 }
 td {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.129);
 }
 table {
   display: flexbox;
   padding: 50px;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 
 @media screen and (max-width: 750px) {
