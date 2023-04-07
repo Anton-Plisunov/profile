@@ -139,10 +139,7 @@ table {
   align-items: center;
   width: 100%;
 }
-tr:hover {
-  background-color: #b600b310;
-  border-bottom: 2px solid white;
-}
+
 .oneT {
   width: 100%;
 }
